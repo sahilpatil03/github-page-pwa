@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub page as PWA template</title>
+  <link rel="canonical" href="https://codepo8.github.io/github-page-pwa/" />
+  <link rel="manifest" href="/github-page-pwa/manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <h1>GitHub page as PWA template by sahil patil</h1>
+  <p>
+    This is a PWA page created by SAHIL PATIL <a href="https://github.com/sahilpatil03/simple-attendance-system">https://github.com/sahilpatil03/simple-attendance-system</a> </p>
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/github-page-pwa/sw.js',
+          {scope: '/github-page-pwa/'}
+        )
+      }
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
